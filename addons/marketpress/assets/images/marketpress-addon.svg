@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title description">
+	<title id="title">MarketPress und boniPS</title>
+	<desc id="description">Einkaufswagen mit Münzen für die MarketPress-boniPS-Integration.</desc>
+	<rect width="1200" height="900" fill="#f7f8fa"/>
+	<circle cx="600" cy="440" r="290" fill="#fff3cd"/>
+	<path d="M385 310h85l42 285h314l68-205H500" fill="none" stroke="#293241" stroke-linecap="round" stroke-linejoin="round" stroke-width="36"/>
+	<circle cx="550" cy="675" r="34" fill="#293241"/>
+	<circle cx="775" cy="675" r="34" fill="#293241"/>
+	<circle cx="590" cy="410" r="78" fill="#e1ae22"/>
+	<circle cx="755" cy="410" r="78" fill="#e1ae22"/>
+	<circle cx="675" cy="505" r="78" fill="#e1ae22"/>
+	<path d="M590 365v90m-28-63h56m137-27v90m-28-63h56m-108 68v90m-28-63h56" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="16"/>
+	<text x="600" y="790" fill="#293241" font-family="Arial, sans-serif" font-size="66" font-weight="700" text-anchor="middle">MarketPress</text>
+	<text x="600" y="848" fill="#6b7280" font-family="Arial, sans-serif" font-size="32" text-anchor="middle">Zahlungen mit boniPS-Punkten</text>
+</svg>

@@ -1,0 +1,12 @@
+#bonips_sell_content { }
+#bonips_sell_content .inside input[type="checkbox"] { margin-right: 12px; }
+
+#bonips_sell_content .inside ul { }
+#bonips_sell_content .inside ul li label { padding-right: 12px; }
+#bonips_sell_content .inside ul li>input, #bonips_sell_content .inside ul li .formated { float: right; }
+
+#bonips_sell_content .inside ul li { float: none; clear: both; line-height: 25px; }
+#bonips_sell_content .inside ul li.long input { width: 100%; float: none; clear: both; }
+
+p#bonips-submit { text-align: right; }
+#bonips_sell_content .inside ul li input.disabled { background-color: #F8F8F8; border-color: #DFDFDF; }

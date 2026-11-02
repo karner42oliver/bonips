@@ -1,0 +1,72 @@
+.bonips-ui-overlay {
+	position: fixed;
+	inset: 0;
+	z-index: 100000;
+	display: none;
+	background: rgba(0, 0, 0, .45);
+}
+
+.bonips-ui-dialog-shell {
+	position: fixed;
+	top: 16%;
+	left: 50%;
+	z-index: 100001;
+	display: none;
+	max-width: 96vw;
+	transform: translateX(-50%);
+}
+
+.bonips-ui-dialog-box {
+	min-width: 280px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+}
+
+.bonips-ui-dialog-titlebar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 12px;
+	font-weight: 600;
+	border-bottom: 1px solid #e2e4e7;
+}
+
+.bonips-ui-dialog-close {
+	padding: 2px 6px;
+	font-size: 18px;
+	line-height: 1;
+	cursor: pointer;
+	background: transparent;
+	border: 0;
+}
+
+.bonips-ui-dialog-content {
+	max-height: 70vh;
+	padding: 12px;
+	overflow: auto;
+}
+
+.bonips-ui-ac-wrap {
+	position: absolute;
+	z-index: 100002;
+	max-height: 220px;
+	margin: 0;
+	padding: 0;
+	overflow: auto;
+	list-style: none;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 5px 12px rgba(0, 0, 0, .15);
+}
+
+.bonips-ui-ac-wrap li {
+	padding: 7px 10px;
+	margin: 0;
+	cursor: pointer;
+}
+
+.bonips-ui-ac-wrap li:hover,
+.bonips-ui-ac-wrap li.active {
+	background: #f0f6fc;
+}

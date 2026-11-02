@@ -1,0 +1,42 @@
+jQuery(function($){
+
+	$(document).ready(function(){
+
+		$( 'select#bonips-email-instance' ).on('change', function(e){
+
+			var selectedevent = $(this).find( ':selected' );
+			console.log( selectedevent.val() );
+			if ( selectedevent.val() == 'custom' ) {
+
+				$( '#reference-selection' ).show();
+
+			}
+			else {
+
+				$( '#reference-selection' ).hide();
+
+			}
+
+		});
+
+		$( 'select#bonips-email-reference' ).on('change', function(e){
+
+			var selectedevent = $(this).find( ':selected' );
+			if ( selectedevent.val() == 'bonips_custom' ) {
+
+				$( '#custom-reference-selection' ).show();
+				$( '#bonips-email-custom-ref' ).trigger('focus');
+
+			}
+			else {
+
+				$( '#custom-reference-selection' ).hide();
+				$( '#bonips-email-custom-ref' ).trigger('blur');
+
+			}
+
+		});
+
+	});
+
+});
