@@ -267,6 +267,7 @@ if ( ! class_exists( 'boniPS_Core' ) ) :
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-affiliatewp.php' );
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-badgeOS.php' );
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-PSForum.php' );
+			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-ps-integrations.php' );
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-ps-community.php' );
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-buddypress-media.php' );
 			$this->file( boniPS_PLUGINS_DIR . 'bonips-hook-buddypress.php' );
