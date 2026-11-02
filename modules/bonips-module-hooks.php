@@ -224,6 +224,7 @@ if ( ! class_exists( 'boniPS_Hooks_Module' ) ) :
 		public function settings_header() {
 
 			wp_enqueue_style( 'widgets' );
+			wp_enqueue_style( 'bonips-admin' );
 			wp_enqueue_style( 'bonips-bootstrap-grid' );
 			wp_enqueue_style( 'bonips-forms' );
 

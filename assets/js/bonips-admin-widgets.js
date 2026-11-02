@@ -335,6 +335,14 @@ wpWidgets = {
 		$( '#available-widgets .widget .widget-title' ).on( 'click.widgets-chooser', function() {
 			var $widget = $(this).closest( '.widget' );
 
+			if ( sidebars.length === 1 ) {
+				self.clearWidgetSelection();
+				$widget.addClass( 'widget-in-question' );
+				self.addWidget( chooser, sidebars.attr( 'id' ) );
+				self.clearWidgetSelection();
+				return;
+			}
+
 			if ( $widget.hasClass( 'widget-in-question' ) || $( '#widgets-left' ).hasClass( 'chooser' ) ) {
 				self.closeChooser();
 			} else {
@@ -508,9 +516,9 @@ wpWidgets = {
 		});
 	},
 
-	addWidget: function( chooser ) {
+	addWidget: function( chooser, selectedSidebarId ) {
 		var widget, widgetId, add, n, viewportTop, viewportBottom, sidebarBounds,
-			sidebarId = chooser.find( '.widgets-chooser-selected' ).data('sidebarId'),
+			sidebarId = selectedSidebarId || chooser.find( '.widgets-chooser-selected' ).data('sidebarId'),
 			sidebar = $( '#' + sidebarId );
 
 		widget = $('#available-widgets').find('.widget-in-question').clone();

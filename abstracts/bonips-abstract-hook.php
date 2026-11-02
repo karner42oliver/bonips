@@ -16,6 +16,11 @@ if ( ! class_exists( 'boniPS_Hook' ) ) :
 		public $id           = false;
 
 		/**
+		 * Default preferences for the hook.
+		 */
+		public $defaults     = array();
+
+		/**
 		 * The Hooks settings
 		 */
 		public $prefs        = false;
